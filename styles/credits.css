@@ -1,0 +1,39 @@
+h2 {
+    text-align: left;
+}
+
+.credits table {
+    border-collapse: collapse;
+
+}
+
+table td, th {
+    border: 1px solid #c2c2c2;
+    padding: .8rem .3rem;
+}
+
+table tr:first-child {
+    background-color: #dfdede;
+}
+
+
+
+
+/* grid */
+
+@media(min-width: 50em){
+
+    .credits {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem 1fr;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    table td, th {
+        padding: .8rem 2rem;
+    }
+
+}
