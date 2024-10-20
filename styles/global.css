@@ -182,8 +182,10 @@ header {
 }
 
 .site-wrapper {
-	margin-top: 3rem;
+	margin-top: 5em;
 }
+
+
 
 /* -----site-header----- */
 
@@ -203,6 +205,10 @@ h1 {
 
 
 /* footer */
+
+footer {
+	margin-top: 10rem;
+}
 
 footer p {
 	margin: 0;
