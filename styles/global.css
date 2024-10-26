@@ -110,11 +110,10 @@ header {
 	list-style-type: none;
 	text-align: left;	
     position: fixed;
-    /* top: 3rem; */
     transition: all .5s ease;
     left: -100%;
-
 }
+
 
 #main-nav-list.toggled {
     display: block;    
@@ -122,12 +121,44 @@ header {
 	width: 100vw;
     background-color: #ffffff;
     left: 0;
-	padding-left: 3.75rem;
+	padding-left: 1.75rem;
 
 }
 
 #main-nav-list.toggled li {
-	margin: 2rem auto;
+	margin: 1rem;
+}
+
+#main-nav-list a, #main-nav-list.toggled a {
+	padding: 1rem;
+}
+
+
+@media(min-width:50em){
+
+	.site-navigation {
+		justify-content: left;
+	}
+
+	#main-nav-button {
+		display: none;
+	}
+
+	#main-nav-list.toggled {
+		display: none;
+	}
+
+	#main-nav-list {
+		display: flex;
+		flex-wrap: wrap;
+		transition: none;
+		position: sticky;
+		left: 50%;
+		top: 5;
+		width: fit-content;
+		margin: 1rem 1rem 1rem 0;
+	
+	}
 }
 
 

@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles/normalize-fwd.css">
 	<link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/destinations_activities.css">
-    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/menu-toggle.js" defer></script>
 
 </head>
 
@@ -31,22 +31,19 @@
     <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <header>
         <a href="index.html" class="main-link"><img class="favicon" src="country_website_favicon_minjin.svg" alt="favicon"><span class="site-title">Journey to Mongolia</span></a>
-        <nav class="site-navigation" id="site-navigation">
-            <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+        <nav class="site-navigation">
+            <button class="menu-toggle" id="main-nav-button" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
                     <title>Menu Icon</title>
                     <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
                 </svg>
             </button>
-
-            <div class="nav-menu">
-            <ul>
+            <ul id="main-nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="activities.html">Activities</a></li>
                 <li><a href="credits.html">Credits</a></li>
-            </ul>
-            </div>
+            </ul>           
         </nav>
     </header>
     
