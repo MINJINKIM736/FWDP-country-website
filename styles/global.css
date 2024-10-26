@@ -54,9 +54,6 @@ body {
 }
 
 
-
-
-
 /*-----header-----*/
 
 
@@ -97,81 +94,71 @@ header {
 	z-index: 998;
 }
 
-
+.site-title {
+	font-weight: bold;	
+}
 
 /* nav */
 
-
-.site-navigation {
-	width: 3rem; height: 3rem;
-}
-
-.nav-menu {
-	height: 16rem;
-}
-
-.site-navigation ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	text-align: left;
+#main-nav-button {
 	background-color: #ffffff;
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-}
-
-.site-navigation.toggled ul {
-	display: block;
-	margin-top: 4.8rem;
+	border: none;
 
 }
 
-.site-navigation a {
-	display: block;
+#main-nav-list {
+	list-style-type: none;
+	text-align: left;	
+    position: fixed;
+    transition: all .5s ease;
+    left: -100%;
+}
+
+
+#main-nav-list.toggled {
+    display: block;    
+    height: 100vh;
+	width: 100vw;
+    background-color: #ffffff;
+    left: 0;
+	padding-left: 1.75rem;
+
+}
+
+#main-nav-list.toggled li {
+	margin: 1rem;
+}
+
+#main-nav-list a, #main-nav-list.toggled a {
 	padding: 1rem;
 }
 
-.menu-toggle {
-	width: 3rem; height: 3rem;
-	background-color: transparent;
-	border: 0;
 
-}
+@media(min-width:50em){
 
-.menu-toggle svg path {
-	fill: #000000;
-}
+	.site-navigation {
+		justify-content: left;
+	}
 
-.menu-toggle:focus {
-	border: 0;
-	outline: 1px dotted;
-}
-
-@media screen and (min-width: 50em) {
-
-	.menu-toggle {
+	#main-nav-button {
 		display: none;
 	}
 
-	.site-navigation {
-		width: 50%;
+	#main-nav-list.toggled {
+		display: none;
 	}
 
-	.nav-menu {
-		height: 5rem;
-	}
-
-	.site-navigation ul,
-	.site-navigation.toggled ul {
+	#main-nav-list {
 		display: flex;
-		justify-content: flex-end;
-		align-items: center;
+		flex-wrap: wrap;
+		transition: none;
+		position: sticky;
+		left: 50%;
+		top: 5;
+		width: fit-content;
+		margin: 1rem 1rem 1rem 0;
+	
 	}
-
 }
 
 
@@ -182,8 +169,10 @@ header {
 }
 
 .site-wrapper {
-	margin-top: 3rem;
+	margin-top: 5em;
 }
+
+
 
 /* -----site-header----- */
 
@@ -203,6 +192,10 @@ h1 {
 
 
 /* footer */
+
+footer {
+	margin: 10rem auto 1rem;
+}
 
 footer p {
 	margin: 0;
