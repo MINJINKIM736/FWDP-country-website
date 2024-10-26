@@ -9,6 +9,7 @@
 	margin-top: 3rem;
 }
 
+
 /* -----section site-header----- */
 
 .site-header {
@@ -32,10 +33,28 @@ h1 {
 	}
 }
 
-/* -----section intro----- */
+/* -----section blockquote----- */
+
+
+.blockquote {
+	margin: 7rem auto;
+}
+
+@media(min-width: 50em) {
+	.blockquote {
+		font-size: 1.4rem;
+
+	}
+}
+
+/* -----section contents wrapper----- */
+
+
+/* intro */
 
 .intro {
 	width: 18rem;
+	height: 32rem;
 	margin: 10rem auto;
 	border: 1px solid #5b5a5a;
 	border-radius: 6px;
@@ -46,8 +65,9 @@ h1 {
 .intro-img {
     width: 17rem;
     height: 17rem;
+	border-radius: 6px;
 	object-fit: cover;
-	margin: 2rem auto;
+	margin: 1rem auto;
 
 }
 
@@ -55,38 +75,39 @@ h1 {
 	margin: 3rem 1rem;
 }
 
-.intro-detail{
-	margin: 0 auto;
-}
-
-.blockquote {
-	margin: 3rem 1rem;
-}
-
 
 @media(min-width: 50em) {
 	.intro {
-		width: 48rem;
+		width: clamp(45rem, 60%, 60rem);
+		height: 27rem;
+		padding: 3rem 1rem;
 		display: grid;
-		grid-template-columns: 17rem 25rem;
-		grid-row: 1fr;
+		grid-template-columns: 17rem 1fr;
+		justify-items: center;
+	}
 
+	.intro-img {
+		margin: 0;
 	}
 
 	.intro-text {
+		max-width: 90%;
 		margin: 0;
+		font-size: 1.2rem;
+		line-height: 4.3rem;
+		text-align: left;
+		padding: 1rem;
 	}
 }
 
-
-/* -----contact form----- */
+/* contact form */
 
 .contact-form {
+	justify-self: center;
 	width: 18rem;
-	margin: 0 auto;
+	height: 32rem;
 	border: 1px solid #5b5a5a;
-	border-radius: 6px;;
-
+	border-radius: 6px;
 }
 
 .contact-form h3 {
@@ -95,9 +116,9 @@ h1 {
 .contact-form form{
 	display: grid;
 	grid-template-columns: 4rem 13rem;
-	/* grid-template-rows: repeat(5,1fr); */
 	grid-template-rows: 1fr 1fr 1fr 7rem;
 	justify-content: center;
+	align-content: center;
 	justify-items: center;
 	align-items: center;
 	gap: 2px;
@@ -122,13 +143,23 @@ h1 {
 	background-color:#b0ddf7;
 }
 
-@media(min-width: 50em){
-	.contact-form form {
-		grid-template-columns: 4rem 25rem;
+@media(min-width: 50em) {
+	.contact-form {
+		width: clamp(45rem, 60%, 60rem);
+		padding: 3rem 1rem;
+	}
+
+	.contact-form form{
+		grid-template-columns: 6rem 24rem;
+		grid-template-rows: 1fr 1fr 1fr 7rem;
+		justify-content: center;
+		align-content: center;
+		justify-items: center;
+		align-items: center;
+		gap: 2px;
 	}
 
 	#name, #email, #message{
 		width: 22rem;
 	}
-
 }
