@@ -2,6 +2,10 @@ h2 {
     text-align: left;
 }
 
+.credits {
+    justify-self: center;
+}
+
 .credits table {
     border-collapse: collapse;
 
@@ -28,8 +32,6 @@ table tr:first-child {
         grid-template-columns: 1fr;
         grid-template-rows: 3rem 1fr;
         align-items: center;
-        justify-items: center;
-        justify-content: center;
     }
 
     table td, th {

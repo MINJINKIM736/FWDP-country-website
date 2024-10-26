@@ -80,7 +80,7 @@ h1 {
 	.intro {
 		width: clamp(45rem, 60%, 60rem);
 		height: 27rem;
-		padding: 3rem 1rem;
+		padding: 3rem 1.5rem;
 		display: grid;
 		grid-template-columns: 17rem 1fr;
 		justify-items: center;
@@ -96,7 +96,7 @@ h1 {
 		font-size: 1.2rem;
 		line-height: 4.3rem;
 		text-align: left;
-		padding: 1rem;
+		/* padding: 1rem; */
 	}
 }
 
