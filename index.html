@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journey to Mongolia</title>
+    <meta name="description"content="Discover Mongolia’s hidden gems">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,39 +14,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any"> 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="manifest" href="site.webmanifest" />
 
-
-
-
-
-    <link rel="icon" href="media/country_website_favicon_minjin.svg">
+    <!-- css -->
     <link rel="stylesheet" href="styles/normalize-fwd.css">
 	<link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/navigation.js" defer></script>
-
+    <script src="scripts/menu-toggle.js" defer></script>
 </head>
 
 <body>
     <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <header>
-        <a href="index.html" class="main-link"><img class="favicon" src="media/country_website_favicon_minjin.svg" alt="favicon"><span class="site-title">Journey to Mongolia</span></a>
-        <nav class="site-navigation" id="site-navigation">
-            <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+        <a href="index.html" class="main-link"><img class="favicon" src="country_website_favicon_minjin.svg" alt="favicon"><span class="site-title">Journey to Mongolia</span></a>
+        <nav class="site-navigation">
+            <button class="menu-toggle" id="main-nav-button" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
                     <title>Menu Icon</title>
                     <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
                 </svg>
             </button>
-
-            <div class="nav-menu">
-            <ul>
+            <ul id="main-nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="activities.html">Activities</a></li>
                 <li><a href="credits.html">Credits</a></li>
-            </ul>
-            </div>
+            </ul>           
         </nav>
     </header>
     
@@ -55,21 +53,24 @@
         <section class="site-header">
             <h1>Mongolia</h1>
             <!-- video -->
-            <video class="site-header-video" width=100% poster="media/lake_in_mongolia_img.png" autoplay muted loop playsinline>
-				<source src="media/lake_in_mongolia.mp4" type="video/mp4">
+            <video class="site-header-video" width=100% poster="media/index/lake_in_mongolia_img.png" autoplay muted loop playsinline>
+				<source src="media/index/lake_in_mongolia.mp4" type="video/mp4">
 				Your browser does not support the video element.
 			</video>
         </section>
 
-        <!-- blockquote -->
         <section class="intro">
-            <div class="quote">
-                <blockquote>
-                <p>"While your horse is strong, travel to see the world."</p>
-                </blockquote>
-                <cite>—Mongolian proverb</cite>
-            </div>
-            <p class="intro-detail">Now's the time to explore Mongolia’s endless steppes, towering mountains, and peaceful deserts, and soak in the natural beauty all around you.</p>
+            <img class="intro-img" src="media/index/intro.jpg" alt="intro img">
+            <article class="intro-text">
+                <div class="blockquote">
+                    <!-- blockquote -->
+                    <blockquote>
+                        <p>"While your horse is strong, travel to see the world."</p>
+                    </blockquote>
+                    <cite>—Mongolian proverb</cite>
+                </div>
+                <p class="intro-detail">Now's the time to explore Mongolia’s endless steppes, towering mountains, and peaceful deserts, and soak in the natural beauty all around you.</p>
+            </article>
         </section>
 
         <section class="contact-form">
@@ -86,13 +87,11 @@
                 <input type="submit" value="Submit" class="submit-btn"></form> 
             </form>
         </section>
-
-
-
     </main>
 
     <footer class="site-footer">
-        <p>&copy; Minjin Kim 2024.</p>
+        <p>&copy; Minjin Kim 2024</p>
     </footer>
+
 </body>
 </html>

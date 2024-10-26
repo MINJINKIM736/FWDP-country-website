@@ -29,6 +29,13 @@ h2 {
 }
 
 
+.contents-container:hover{
+    width: 18.108rem;
+    height: 27.162rem;
+
+}
+
+
 /* grid */
 
 @media(min-width: 50em){
