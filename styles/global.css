@@ -3,7 +3,6 @@
 
 body {
 	font-family: "Pontano Sans", sans-serif;
-	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 }
@@ -112,6 +111,7 @@ header {
     position: fixed;
     transition: all .5s ease;
     left: -100%;
+
 }
 
 
@@ -125,7 +125,7 @@ header {
 
 }
 
-#main-nav-list.toggled li {
+#main-nav-list li, #main-nav-list.toggled li {
 	margin: 1rem;
 }
 
@@ -135,6 +135,10 @@ header {
 
 
 @media(min-width:50em){
+
+	.main-link {
+		margin-left: 2rem;
+	}
 
 	.site-navigation {
 		justify-content: left;
@@ -154,7 +158,6 @@ header {
 		transition: none;
 		position: sticky;
 		left: 50%;
-		top: 5;
 		width: fit-content;
 		margin: 1rem 1rem 1rem 0;
 	
@@ -170,6 +173,8 @@ header {
 
 .site-wrapper {
 	margin-top: 5em;
+	justify-items: center;
+
 }
 
 
