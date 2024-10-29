@@ -1,11 +1,7 @@
-.credits {
-    justify-self: center;
-}
 
 .credits table {
-    margin: 5rem 1rem;
+    margin: 5rem auto;
     border-collapse: collapse;
-
 }
 
 table td, th {
