@@ -1,21 +1,10 @@
 
-/* -----site-wrapper----- */
-
-.site-wrapper > *:not(.site-header){
-	margin-left: 1rem; margin-right: 1rem;
-}
-
-.site-wrapper {
-	margin-top: 3rem;
-	justify-items: center;
-}
-
 
 /* -----section site-header----- */
 
+
 .site-header {
     position: relative;
-	align-items: center;
 }
 
 h1 {
@@ -29,7 +18,7 @@ h1 {
 
 @media(min-width: 50em) {
 	h1 {
-		font-size: 5rem;
+		font-size: clamp(5rem, 10vw, 7rem);
 
 	}
 }
@@ -59,8 +48,6 @@ h1 {
 	margin: 10rem auto;
 	border: 1px solid #5b5a5a;
 	border-radius: 6px;
-	align-items: center;
-	justify-content: center;
 }
 
 .intro-img {
@@ -97,14 +84,13 @@ h1 {
 		font-size: 1.2rem;
 		line-height: 4.3rem;
 		text-align: left;
-		/* padding: 1rem; */
 	}
 }
 
 /* contact form */
 
 .contact-form {
-	justify-self: center;
+	margin-left: auto; margin-right: auto;
 	width: 18rem;
 	height: 32rem;
 	border: 1px solid #5b5a5a;

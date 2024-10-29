@@ -1,12 +1,9 @@
-h2 {
-    text-align: left;
-}
-
 .credits {
     justify-self: center;
 }
 
 .credits table {
+    margin: 5rem 1rem;
     border-collapse: collapse;
 
 }
@@ -22,20 +19,9 @@ table tr:first-child {
 
 
 
-
-/* grid */
-
 @media(min-width: 50em){
 
-    .credits {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3rem 1fr;
-        align-items: center;
-    }
-
     table td, th {
-        padding: .8rem 2rem;
+        padding: .8rem 3rem;
     }
-
 }

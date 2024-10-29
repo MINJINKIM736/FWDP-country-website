@@ -167,33 +167,11 @@ header {
 
 /* -----site-wrapper----- */
 
-.site-wrapper > *:not(.site-header){
-	margin-left: 1rem; margin-right: 1rem;
-}
 
 .site-wrapper {
-	margin-top: 5em;
-	justify-items: center;
-
+	margin: 8rem auto;
+	justify-content: center;
 }
-
-
-
-/* -----site-header----- */
-
-.site-header {
-    position: relative;
-	align-items: center;
-}
-
-h1 {
-	color: #ffffff;
-    position: absolute;
-	bottom: 1rem;
-	left: 0; right: 0; top: 50%;
-}
-
-
 
 
 /* footer */
